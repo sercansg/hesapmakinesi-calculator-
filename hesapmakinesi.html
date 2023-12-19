@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        background-color: antiquewhite;
+    }
+
+
+
+input{
+    background-color: tomato;
+    border-radius: 4px;
+    box-shadow: 2px 2px 1px silver;
+    color: white;
+}
+button{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    width: 20px;
+    margin: 3px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: brown;
+}
+
+p{
+    display: contents;
+}
+</style>
+
+
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1 style="color: tomato;">Hesap Makinesi</h1>
+        <input type="number" placeholder="Sayi Giriniz" id="sayi1">
+        <input type="number" placeholder="Diğer Sayıyı giriniz" id="sayi2">
+        <button onclick="toplama()">+</button>
+        <p id="sonuc"></p>
+    .</div>
+
+    <div style="text-align: center;">
+        
+        <input type="number" placeholder="Sayi Giriniz" id="sayi3">
+        <input type="number" placeholder="Diğer Sayıyı giriniz" id="sayi4">
+        <button onclick="bölme()">/</button>
+        <p id="sonuc2"></p>
+    .</div>
+
+    <div style="text-align: center;">
+        
+        <input type="number" placeholder="Sayi Giriniz" id="sayi5">
+        <input type="number" placeholder="Diğer Sayıyı giriniz" id="sayi6">
+        <button onclick="cıkarma()">-</button>
+        <p id="sonuc3"></p>
+    .</div>
+
+    <div style="text-align: center;">
+        
+        <input type="number" placeholder="Sayi Giriniz" id="sayi1">
+        <input type="number" placeholder="Diğer Sayıyı giriniz" id="sayi2">
+        <button onclick="carpma()">*</button>
+        <p id="sonuc4"></p>
+    .</div>
+    
+
+
+
+
+    
+    
+    <script>
+        
+        function toplama (){
+           let a = parseInt(document.getElementById("sayi1").value);
+           let b = parseInt(document.getElementById("sayi2").value);
+           let c = a + b;
+           
+           document.getElementById("sonuc").innerHTML = c;
+
+        }
+
+        function bölme (){
+           let a = parseInt(document.getElementById("sayi3").value);
+           let b = parseInt(document.getElementById("sayi4").value);
+           let c = a / b;
+           
+           document.getElementById("sonuc2").innerHTML = c;
+
+        }
+        function cıkarma (){
+            let a = parseInt(document.getElementById("sayi5").value);
+           let b = parseInt(document.getElementById("sayi6").value);
+           let c = a - b;
+           
+           document.getElementById("sonuc3").innerHTML = c;
+
+        }
+        function carpma (){
+           let a = parseInt(document.getElementById("sayi1").value);
+           let b = parseInt(document.getElementById("sayi2").value);
+           let c = a * b;
+           
+           document.getElementById("sonuc4").innerHTML = c;
+
+        }
+        
+    
+
+
+    </script>
+</body>
+</html>
